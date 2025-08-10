@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="introduction">
+   <section class="intro">
+  <h1>My Hobbies:-</h1>
+  <p>I’ve discovered that the most meaningful moments come from my hobbies. Below, you'll see a few of the pastimes that energize, inspire, or simply bring me joy.</p>
+</section>
+
+
+  <section class="gallery">
+    <div class="hobby">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.xlzReSiiDhFW8T66VPADkQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Hiking">
+      <h2>Hiking</h2>
+      <p>I love being in nature, exploring trails, and the peaceful time it gives me.</p>
+      <a href="https://en.wikipedia.org/wiki/Hiking" target="blank">Learn more</a>
+    </div>
+
+    <div class="hobby">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.y-Y3vP0H0LdKVi2YVbQUmgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Photography">
+      <h2>Photography</h2>
+      <p>Capturing moments through the lens makes me see the world differently.</p>
+      <a href="https://www.photography.com/tips" target="blank" >Tutorials</a>
+    </div>
+
+    <div class="hobby">
+      <img src="https://tse3.mm.bing.net/th/id/OIP._5FLkUxgRC9zQLiqOqwUTgHaE7?r=0&w=626&h=417&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cooking">
+      <h2>Cooking</h2>
+      <p>Experimenting with flavors and cooking new dishes is both fun and rewarding.</p>
+      <a href="https://www.foodnetwork.com/recipes" target="blank">Recipes</a>
+    </div>
+  </section>
+
+  <style>
+    .gallery {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hobby {
+  background: #04a89b;
+  color: #fff; /* Improved contrast */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hobby img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.hobby h2 {
+  margin: 0.5rem 0 0.75rem 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+  </style>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    
+
+}
+.container{
+   position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(252, 165, 3, 0.5), rgba(0,0,0,0.5)),
+    url('https://img.freepik.com/premium-photo/elegant-floral-wedding-backdrop-wallpaper_756748-2486.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 1rem;
+
+  
+ 
+
+}
+h1{
+   font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.event-details{
+  max-width: 600px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  padding: 2rem 1.5rem;
+}
+.event-details .description,
+.event-details .datetime,
+.event-details .venue {
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+.rsvp-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0a3fee;
+  border: none;
+  color: rgb(238, 239, 243);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.rsvp-btn:hover {
+  background-color: #12c1ec;
+}
+.rsvp-btn:focus {
+  outline: 2px solid #12c1ec;
+  outline-offset: 2px;
+}
+
+.social-share {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-share a {
+  color: white;
+  text-decoration: underline;
+  font-size: large;
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 599px) {
+  .container {
+    padding: 0.5rem;
+    height: auto;
+    min-height: 100vh;
+  }
+  .event-details {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Corrected selectors in media query */
+@media (min-width: 600px) {
+  .hero-overlay h1 {
+    font-size: 4rem;
+  }
+  .event-details .description,
+  .event-details .datetime,
+  .event-details .venue {
+    font-size: 1.5rem;
+  }
+}
