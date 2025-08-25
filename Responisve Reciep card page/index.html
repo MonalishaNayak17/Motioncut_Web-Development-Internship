@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Recipe Card Page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+</head>
+
+<body>
+
+  <header>
+    <h1>🍴 Delicious Recipes</h1>
+    <p>Find step-by-step recipes with ingredients, cooking time, and more.</p>
+  </header>
+
+  <main class="recipe-gallery">
+
+    <!-- Recipe Card -->
+    <section class="recipe-card">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800" alt="Spaghetti Carbonara" class="recipe-img">
+
+      <article class="recipe-content">
+        <h2 class="recipe-title">Spaghetti Carbonara</h2>
+        <p class="recipe-desc">A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper – simple yet delicious!</p>
+        
+        <div class="recipe-info">
+          <p><i class="fa-regular fa-clock"></i> Prep: 15 mins</p>
+          <p><i class="fa-solid fa-fire"></i> Cook: 20 mins</p>
+          <p><i class="fa-solid fa-hourglass"></i> Total: 35 mins</p>
+          <p><i class="fa-solid fa-user-group"></i> Servings: 4</p>
+        </div>
+
+        <div class="recipe-layout">
+          <!-- Ingredients -->
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>200g spaghetti</li>
+              <li>100g pancetta</li>
+              <li>2 large eggs</li>
+              <li>50g parmesan cheese</li>
+              <li>Salt & black pepper</li>
+            </ul>
+          </div>
+
+          <!-- Instructions -->
+          <div class="instructions">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Cook the spaghetti in salted water until al dente.</li>
+              <li>Fry pancetta until crispy.</li>
+              <li>Whisk eggs with parmesan, salt, and pepper.</li>
+              <li>Drain pasta, combine with pancetta, remove from heat.</li>
+              <li>Stir in egg mixture quickly. Serve hot.</li>
+            </ol>
+          </div>
+        </div>
+
+        <button class="print-btn" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Recipe</button>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Responsive Recipe Page | Built with ❤ using HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
